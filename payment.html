@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Neon Nexus - Payment</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Payment for Neon Nexus Gaming">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/light-theme.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <div class="perspective effect-rotate-left">
+    <div class="container">
+      <div id="viewport" class="l-viewport">
+        <div class="l-wrapper">
+          <header class="header">
+            <a class="header--logo" href="index.html">
+              <img src="assets/img/neon-nexus-logo.png" alt="Neon Nexus" style="width: 60px; height: 60px;">
+              <p>Neon Nexus</p>
+            </a>
+            <div class="header--nav-toggle">
+              <span></span>
+            </div>
+          </header>
+          <div class="payment-section">
+            <h2>Complete Your Booking</h2>
+            <div class="payment-form-container">
+              <div class="order-summary">
+                <h3>Order Summary</h3>
+                <div class="plan-details">
+                  <p>Selected Plan: <span id="selected-plan">Loading...</span></p>
+                  <p>Duration: <span id="selected-duration">Loading...</span></p>
+                  <p>Total Amount: <span id="total-amount">Loading...</span></p>
+                </div>
+              </div>
+              <form class="payment-form">
+                <div class="form-group">
+                  <label>Card Number</label>
+                  <div class="card-input">
+                    <input type="text" placeholder="1234 5678 9012 3456" maxlength="19" required>
+                    <i class="fas fa-credit-card"></i>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label>Expiry Date</label>
+                    <input type="text" placeholder="MM/YY" maxlength="5" required>
+                  </div>
+                  <div class="form-group">
+                    <label>CVV</label>
+                    <input type="text" placeholder="123" maxlength="4" required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>Name on Card</label>
+                  <input type="text" required>
+                </div>
+                <button type="submit" class="payment-btn">Pay Now</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
+  <script src="assets/js/functions-min.js"></script>
+  <script>
+    // Get URL parameters
+    const urlParams = new URLSearchParams(window.location.search);
+    const plan = urlParams.get('plan');
+
+    // Plan details
+    const plans = {
+      'casual': {
+        name: 'Casual Gamer',
+        duration: '1 hour',
+        amount: '₹100'
+      },
+      'daily': {
+        name: 'Daily Pass',
+        duration: '1 day',
+        amount: '₹800'
+      },
+      'weekly': {
+        name: 'Weekly Membership',
+        duration: '1 week',
+        amount: '₹4,500'
+      }
+    };
+
+    // Update order summary based on selected plan
+    function updateOrderSummary() {
+      const selectedPlan = plans[plan] || plans.casual;
+      document.getElementById('selected-plan').textContent = selectedPlan.name;
+      document.getElementById('selected-duration').textContent = selectedPlan.duration;
+      document.getElementById('total-amount').textContent = selectedPlan.amount;
+    }
+
+    // Call the function when page loads
+    window.addEventListener('load', updateOrderSummary);
+  </script>
+</body>
+</html> 

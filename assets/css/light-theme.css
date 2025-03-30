@@ -1,0 +1,700 @@
+/* Gaming Theme Styles */
+body {
+  background: radial-gradient(circle at center, #1a2630 0%, #0a0f13 100%) !important;
+  color: #ffffff !important;
+}
+
+.device-notification {
+  background: radial-gradient(circle at center, #1a2630 0%, #0a0f13 100%) !important;
+  color: #ffffff !important;
+}
+
+.device-notification--logo,
+.device-notification--logo p,
+.header--logo,
+.header--logo p {
+  color: #ffffff !important;
+}
+
+.header--nav-toggle span,
+.header--nav-toggle::before,
+.header--nav-toggle::after {
+  background-color: #ffffff !important;
+}
+
+.side-nav > li::before {
+  display: none !important;
+}
+
+.outer-nav li::before {
+  display: none !important;
+}
+
+.side-nav > li,
+.side-nav > li span {
+  color: #ffffff !important;
+  position: relative !important;
+  padding-left: 0 !important;
+}
+
+.outer-nav li {
+  position: relative !important;
+  padding-left: 0 !important;
+}
+
+.side-nav li.is-active {
+  color: #3498db !important;
+}
+
+.side-nav li.is-active span {
+  color: #ffffff !important;
+}
+
+.side-nav li.is-active::before {
+  color: #3498db !important;
+}
+
+.intro--banner::before {
+  background: transparent !important;
+}
+
+.intro--banner h1 {
+  color: #ffffff !important;
+  text-shadow: 0 0 10px rgba(52, 152, 219, 0.5) !important;
+}
+
+.intro--options > a {
+  color: #ffffff !important;
+  background: rgba(52, 152, 219, 0.1) !important;
+}
+
+.intro--options > a:hover {
+  color: #3498db !important;
+}
+
+.work--lockup .slider--item a {
+  color: #7f8c8d !important;
+}
+
+.work--lockup .slider--item-center a {
+  color: #2c3e50 !important;
+}
+
+.work--lockup .slider--next,
+.work--lockup .slider--prev {
+  background-color: #dcdde1 !important;
+}
+
+.contact--lockup .modal {
+  background-color: #e8e9f3 !important;
+  box-shadow: 0 0 30px 0 rgba(52, 152, 219, 0.2) !important;
+}
+
+.contact--lockup .modal--information p,
+.contact--lockup .modal--information a {
+  color: #2c3e50 !important;
+}
+
+.work-request {
+  color: #ffffff !important;
+}
+
+.work-request--options label {
+  border: 2px solid #3498db !important;
+  color: #ffffff !important;
+}
+
+.work-request--information input[type="text"],
+.work-request--information input[type="email"] {
+  border-bottom: 1px solid #3498db !important;
+  color: #ffffff !important;
+}
+
+.work-request--information input[type="text"]:focus,
+.work-request--information input[type="email"]:focus {
+  background-color: rgba(52, 152, 219, 0.1) !important;
+  color: #ffffff !important;
+}
+
+/* Add subtle effects */
+.side-nav li.is-active {
+  text-shadow: 0 0 10px rgba(52, 152, 219, 0.3) !important;
+}
+
+.intro--options > a:hover {
+  text-shadow: 0 0 10px rgba(52, 152, 219, 0.3) !important;
+}
+
+/* Introduction Image Styling */
+.intro-image {
+  position: absolute;
+  right: -100px;
+  bottom: 0;
+  max-width: 800px;
+  height: auto;
+  opacity: 0.9;
+  mask-image: linear-gradient(to left, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+  -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+  z-index: -1;
+}
+
+.intro--banner {
+  position: relative;
+  overflow: hidden;
+}
+
+.intro--banner button {
+  position: relative;
+  z-index: 2;
+}
+
+/* Custom image styling for Premium PC Gaming */
+.slider--item-image img[src*="Optimized-IMG_0230"] {
+  transform: scale(1.5);
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.slider--item-center .slider--item-image img[src*="Optimized-IMG_0230"] {
+  transform: scale(1.8);
+}
+
+.slider--item-image {
+  overflow: hidden;
+}
+
+/* Specific styling for PS5 console and game collection images */
+.slider--item-image img[src*="ps5-console"],
+.slider--item-image img[src*="game-collection"] {
+  background: linear-gradient(145deg, #ff1a1a, #800000) !important;
+}
+
+/* Game logos styling */
+.about--options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 40px;
+}
+
+.about--options a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.about--options a:hover {
+  transform: translateY(-5px);
+}
+
+.about--options h3 {
+  color: #ffffff !important;
+  font-size: 14px !important;
+  margin-bottom: 8px !important;
+  text-align: center !important;
+  font-weight: 600 !important;
+  text-shadow: 0 0 10px rgba(52, 152, 219, 0.3) !important;
+}
+
+.game-logo {
+  max-width: 100%;
+  height: auto;
+  width: 85% !important;
+  height: auto !important;
+  object-fit: contain !important;
+  margin: 5px 0 !important;
+  max-height: 60px !important;
+  filter: drop-shadow(0 2px 8px rgba(52, 152, 219, 0.3)) !important;
+}
+
+/* Buy Now Button Styling */
+.about--options .buy-now-btn {
+  background: linear-gradient(145deg, #3498db, #2980b9) !important;
+  color: #ffffff !important;
+  padding: 8px 20px !important;
+  border-radius: 20px !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  border: none !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease !important;
+  margin-top: 10px !important;
+  box-shadow: 0 2px 8px rgba(52, 152, 219, 0.3) !important;
+}
+
+.about--options .buy-now-btn:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 12px rgba(52, 152, 219, 0.4) !important;
+  background: linear-gradient(145deg, #2980b9, #3498db) !important;
+}
+
+@media (max-width: 768px) {
+  .about--options {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px !important;
+  }
+  
+  .about--options a {
+    width: 100% !important;
+    max-width: 250px !important;
+  }
+}
+
+/* Additional sections styling for dark theme */
+.work,
+.about,
+.contact,
+.hire {
+  background: transparent !important;
+}
+
+.work h2,
+.about h2,
+.contact h2,
+.hire h2 {
+  color: #ffffff !important;
+}
+
+.slider--item-title,
+.slider--item-description {
+  color: #ffffff !important;
+}
+
+.modal {
+  background: rgba(26, 38, 48, 0.95) !important;
+  box-shadow: 0 0 30px rgba(52, 152, 219, 0.3) !important;
+}
+
+.modal--information p,
+.modal--information a {
+  color: #ffffff !important;
+}
+
+/* Pricing Section Styles */
+.pricing {
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pricing--banner {
+  position: relative;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.pricing--banner h2 {
+  color: #ffffff !important;
+  font-size: 48px;
+  margin-bottom: 30px;
+  text-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+}
+
+.pricing--banner img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+.pricing--options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.pricing--options a {
+  background: rgba(52, 152, 219, 0.1);
+  border: 1px solid rgba(52, 152, 219, 0.2);
+  border-radius: 15px;
+  padding: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pricing--options a:hover {
+  transform: translateY(-5px);
+  background: rgba(52, 152, 219, 0.15);
+  box-shadow: 0 5px 15px rgba(52, 152, 219, 0.2);
+}
+
+.pricing--options h3 {
+  color: #ffffff !important;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.pricing--options p {
+  color: #ffffff !important;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.pricing--options ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+  text-align: center;
+}
+
+.pricing--options ul li {
+  color: #ffffff !important;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.pricing--options .buy-now-btn {
+  background: linear-gradient(145deg, #3498db, #2980b9);
+  color: #ffffff !important;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: auto;
+}
+
+.pricing--options .buy-now-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+}
+
+@media (max-width: 768px) {
+  .pricing--options {
+    grid-template-columns: 1fr;
+  }
+  
+  .pricing--banner h2 {
+    font-size: 36px;
+  }
+  
+  .pricing {
+    padding: 20px;
+  }
+}
+
+/* Perks Section */
+.perks-section {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.perks-section h3 {
+  color: #ffffff !important;
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+.perks-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.perk-item {
+  padding: 20px;
+  background: rgba(52, 152, 219, 0.1);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.perk-item:hover {
+  transform: translateY(-5px);
+  background: rgba(52, 152, 219, 0.15);
+}
+
+.perk-item i {
+  font-size: 32px;
+  color: #3498db;
+  margin-bottom: 15px;
+}
+
+.perk-item h4 {
+  color: #ffffff !important;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.perk-item p {
+  color: #ffffff !important;
+  opacity: 0.8;
+  font-size: 14px;
+}
+
+/* Booking Page Styles */
+.booking-section {
+  padding: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.booking-section h2 {
+  text-align: center;
+  color: #ffffff !important;
+  font-size: 36px;
+  margin-bottom: 40px;
+  text-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+}
+
+.booking-form-container {
+  background: rgba(52, 152, 219, 0.1);
+  border: 1px solid rgba(52, 152, 219, 0.2);
+  border-radius: 15px;
+  padding: 40px;
+}
+
+.booking-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  color: #ffffff !important;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(52, 152, 219, 0.3);
+  border-radius: 8px;
+  color: #ffffff !important;
+  font-size: 16px;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #3498db;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.form-group textarea {
+  grid-column: 1 / -1;
+  resize: vertical;
+}
+
+.booking-form button {
+  grid-column: 1 / -1;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .perks-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .booking-form {
+    grid-template-columns: 1fr;
+  }
+  
+  .pricing-section,
+  .booking-section {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .perks-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.arrow-icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 8px;
+}
+
+.arrow-icon svg {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+  transition: transform 0.3s ease;
+}
+
+.arrow-icon:hover svg {
+  transform: translateX(4px);
+}
+
+/* Payment Page Styles */
+.payment-section {
+  padding: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.payment-section h2 {
+  text-align: center;
+  color: #ffffff !important;
+  font-size: 36px;
+  margin-bottom: 40px;
+  text-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+}
+
+.payment-form-container {
+  background: rgba(52, 152, 219, 0.1);
+  border: 1px solid rgba(52, 152, 219, 0.2);
+  border-radius: 15px;
+  padding: 40px;
+  margin-bottom: 40px;
+}
+
+.order-summary {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.order-summary h3 {
+  color: #ffffff !important;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.plan-details p {
+  color: #ffffff !important;
+  margin-bottom: 10px;
+}
+
+.plan-details span {
+  color: #3498db;
+  font-weight: 600;
+}
+
+.payment-form {
+  display: grid;
+  gap: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  color: #ffffff !important;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(52, 152, 219, 0.3);
+  border-radius: 8px;
+  color: #ffffff !important;
+  font-size: 16px;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #3498db;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.card-input {
+  position: relative;
+}
+
+.card-input i {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #3498db;
+}
+
+.payment-btn {
+  background: linear-gradient(145deg, #3498db, #2980b9);
+  color: #ffffff !important;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 25px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+  width: 100%;
+  display: block;
+}
+
+.payment-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+}
+
+@media (max-width: 768px) {
+  .payment-section {
+    padding: 20px;
+    min-height: auto;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+  
+  .payment-form-container {
+    padding: 20px;
+  }
+}
+
+.header--logo img,
+.device-notification--logo img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  background: transparent;
+}
+
+.header--logo p,
+.device-notification--logo p {
+  margin-left: 10px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+} 

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Neon Nexus - Book Your Slot</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/light-theme.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <div class="perspective effect-rotate-left">
+    <div class="container">
+      <div class="outer-nav--return"></div>
+      <div id="viewport" class="l-viewport">
+        <div class="l-wrapper">
+          <header class="header">
+            <a class="header--logo" href="index.html">
+              <img src="assets/img/logo.png" alt="Global">
+              <p>Neon Nexus</p>
+            </a>
+            <div class="header--nav-toggle">
+              <span></span>
+            </div>
+          </header>
+          <nav class="l-side-nav">
+            <ul class="side-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
+              <li class="is-active"><a href="booking.html">Book Slot</a></li>
+            </ul>
+          </nav>
+          <div class="booking-section">
+            <h2>Book Your Gaming Slot</h2>
+            <div class="booking-form-container">
+              <form class="booking-form">
+                <div class="form-group">
+                  <label for="name">Full Name</label>
+                  <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" id="phone" required>
+                </div>
+                <div class="form-group">
+                  <label for="plan">Select Plan</label>
+                  <select id="plan" required>
+                    <option value="">Choose a plan</option>
+                    <option value="weekly">Weekly Pass - ₹4,500</option>
+                    <option value="monthly">Monthly Plan - ₹15,000</option>
+                    <option value="private">Private Room - ₹2,500/hour</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="date">Preferred Date</label>
+                  <input type="date" id="date" required>
+                </div>
+                <div class="form-group">
+                  <label for="time">Preferred Time</label>
+                  <input type="time" id="time" required>
+                </div>
+                <div class="form-group">
+                  <label for="duration">Duration (hours)</label>
+                  <input type="number" id="duration" min="1" max="24" required>
+                </div>
+                <div class="form-group">
+                  <label for="guests">Number of Guests</label>
+                  <input type="number" id="guests" min="1" max="10" required>
+                </div>
+                <div class="form-group">
+                  <label for="special-requests">Special Requests</label>
+                  <textarea id="special-requests" rows="4"></textarea>
+                </div>
+                <button type="submit" class="cta">Confirm Booking</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
+  <script src="assets/js/functions-min.js"></script>
+</body>
+</html> 
